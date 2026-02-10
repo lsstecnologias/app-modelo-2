@@ -24,18 +24,18 @@ const Header = () => {
         })
     }
 
-function toggleScrolled() {
-    const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
-  }
+    function toggleScrolled() {
+        const selectBody = document.querySelector('body');
+        const selectHeader = document.querySelector('#header');
+        if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+        window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+    }
     useEffect(() => {
-      
- 
 
-  document.addEventListener('scroll', toggleScrolled);
-  window.addEventListener('load', toggleScrolled);
+
+
+        document.addEventListener('scroll', toggleScrolled);
+        window.addEventListener('load', toggleScrolled);
 
         var mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
@@ -54,10 +54,24 @@ function toggleScrolled() {
 
     return (
         <header id="header" class="header fixed-top">
+            <div class="topbar d-flex align-items-center">
+                <div class="container d-flex justify-content-between justify-content-md-between">
+                    <div class="contact-info d-flex align-items-center">
+
+                        <i class="bi bi-phone d-flex align-items-center ms-4"><span>EM FUNCIONAMENTO</span></i>
+                    </div>
+                    <div class="languages  d-md-flex align-items-center">
+
+                        <ul>
+
+                            <li><a href="#">De</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
 
-
-            <div class="branding d-flex align-items-cente">
+            <div class="branding d-flex align-items-center pt-0 pb-0">
 
                 <div class="container position-relative d-flex align-items-center justify-content-between">
                     <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -96,7 +110,7 @@ function toggleScrolled() {
                         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                     </nav>
 
-                   
+
 
                 </div>
 
