@@ -54,23 +54,7 @@ const Header = () => {
 
     return (
         <header id="header" class="header fixed-top">
-            <div class="topbar d-flex align-items-center">
-                <div class="container d-flex justify-content-between justify-content-md-between">
-                    <div class="contact-info d-flex align-items-center">
-
-                        <i class="bi bi-phone d-flex align-items-center ms-4"><span>EM FUNCIONAMENTO</span></i>
-                    </div>
-                    <div class="languages  d-md-flex align-items-center">
-
-                        <ul>
-
-                            <li><a href="#">De</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
+           
             <div class="branding d-flex align-items-center pt-0 pb-0">
 
                 <div class="container position-relative d-flex align-items-center justify-content-between">
